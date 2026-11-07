@@ -1,15 +1,176 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Abik Fashion Studio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyNest | Your Daily Fashion Finds</title>
+    <meta name="description" content="Discover trending fashion, streetwear, outfits and affordable style inspiration at BuyNest.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Welcome to Abik Fashion Studio</h1>
-    <p>Discover your personal style.</p>
-    <button>Shop Now</button>
+<header class="navbar">
+    <a href="#" class="logo">Buy<span>Nest.</span></a>
+
+    <nav id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#men">Men</a>
+        <a href="#women">Women</a>
+        <a href="#trending">Trending</a>
+    </nav>
+
+    <a href="#trending" class="nav-shop">Explore</a>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">STYLE STARTS HERE</p>
+        <h1>Find Your<br>Next <span>Favourite</span> Look.</h1>
+        <p class="hero-text">
+            Discover trending outfits, everyday essentials
+            and fresh fashion inspiration.
+        </p>
+        <a href="#trending" class="primary-btn">Explore Collection ↗</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85"
+             alt="Fashion editorial outfit">
+    </div>
+</section>
+
+<section class="categories">
+    <div class="section-heading">
+        <p class="eyebrow">EXPLORE YOUR STYLE</p>
+        <h2>Shop by Category</h2>
+    </div>
+
+    <div class="category-grid">
+        <a href="#men" class="category-card">
+            <img src="https://images.unsplash.com/photo-1523398002811-999ca8a1cce0?auto=format&fit=crop&w=600&q=80" alt="Men's fashion">
+            <span>Men's Fashion ↗</span>
+        </a>
+
+        <a href="#women" class="category-card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80" alt="Women's fashion">
+            <span>Women's Fashion ↗</span>
+        </a>
+
+        <a href="#trending" class="category-card">
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80" alt="Streetwear">
+            <span>Streetwear ↗</span>
+        </a>
+    </div>
+</section>
+
+<section class="products" id="trending">
+    <div class="section-heading">
+        <p class="eyebrow">THE LATEST EDIT</p>
+        <h2>Trending Finds</h2>
+        <p>Fresh picks for your everyday style.</p>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="men">Men</button>
+        <button class="filter" data-filter="women">Women</button>
+        <button class="filter" data-filter="streetwear">Streetwear</button>
+    </div>
+
+    <div class="product-grid">
+
+        <article class="product-card" data-category="men">
+            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80" alt="Casual shirt">
+            <div class="product-info">
+                <p>MEN'S COLLECTION</p>
+                <h3>Everyday Shirts</h3>
+                <span>Check latest price</span>
+                <a href="#" class="product-link">View Product ↗</a>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="women">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Women's outfit">
+            <div class="product-info">
+                <p>WOMEN'S COLLECTION</p>
+                <h3>Trending Outfits</h3>
+                <span>Check latest price</span>
+                <a href="#" class="product-link">View Product ↗</a>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="streetwear">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Streetwear T-shirt">
+            <div class="product-info">
+                <p>STREETWEAR</p>
+                <h3>Oversized Essentials</h3>
+                <span>Check latest price</span>
+                <a href="#" class="product-link">View Product ↗</a>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="men">
+            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80" alt="Denim jeans">
+            <div class="product-info">
+                <p>MEN'S COLLECTION</p>
+                <h3>Denim Collection</h3>
+                <span>Check latest price</span>
+                <a href="#" class="product-link">View Product ↗</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="style-banner">
+    <p class="eyebrow">YOUR STYLE. YOUR RULES.</p>
+    <h2>Wear What<br>Feels Like You.</h2>
+    <a href="#trending" class="primary-btn">Discover More ↗</a>
+</section>
+
+<section class="about" id="men">
+    <p class="eyebrow">ABOUT BUY NEST</p>
+    <h2>Good Style. Smart Finds.</h2>
+    <p>
+        BuyNest brings together fashion inspiration and trending
+        finds to help you discover your next favourite look.
+        Fashion should feel easy, personal and accessible.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <a href="#home" class="logo">Buy<span>Nest.</span></a>
+    <p>Your Daily Fashion Finds.</p>
+    <p class="copyright">© 2026 BuyNest. All rights reserved.</p>
+    <p class="disclosure">
+        Some product links may be affiliate links.
+        We may earn a commission from qualifying purchases.
+    </p>
+</footer>
+
+<script>
+const filterButtons = document.querySelectorAll(".filter");
+const products = document.querySelectorAll(".product-card");
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        filterButtons.forEach(item => item.classList.remove("active"));
+        button.classList.add("active");
+
+        const category = button.dataset.filter;
+
+        products.forEach(product => {
+            const show = category === "all" ||
+                         product.dataset.category === category;
+
+            product.style.display = show ? "block" : "none";
+        });
+    });
+});
+</script>
 
 </body>
 </html>
