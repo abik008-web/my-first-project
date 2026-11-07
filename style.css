@@ -354,3 +354,150 @@ footer > p {
         font-size: 23px;
     }
 }
+
+/* =================================
+   BUYNEST 2.0 - PREMIUM DESIGN
+================================= */
+
+:root {
+  --bn-black: #171717;
+  --bn-beige: #f4efe5;
+  --bn-gold: #b99a63;
+  --bn-white: #ffffff;
+}
+
+body {
+  background: var(--bn-beige);
+  color: var(--bn-black);
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background: var(--bn-black);
+  color: var(--bn-white);
+  padding: 18px 5%;
+}
+
+.logo {
+  color: var(--bn-white);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.navbar nav a {
+  color: var(--bn-white);
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: var(--bn-gold);
+}
+
+.hero {
+  background: var(--bn-black);
+  color: var(--bn-white);
+  padding: 90px 6%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 68px);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  color: #d0c8bb;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+button,
+.btn {
+  background: var(--bn-black);
+  color: var(--bn-white);
+  border: 1px solid var(--bn-black);
+  padding: 13px 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background: var(--bn-gold);
+  border-color: var(--bn-gold);
+}
+
+.section-heading {
+  text-align: center;
+  margin: 55px 0 30px;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.product-card {
+  background: var(--bn-white);
+  border: 1px solid #e6dfd3;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 17px;
+  padding: 10px;
+}
+
+.product-card p {
+  color: #777;
+  padding: 0 10px;
+}
+
+.style-banner {
+  background: var(--bn-black);
+  color: var(--bn-white);
+  padding: 65px 20px;
+  text-align: center;
+}
+
+.style-banner h2 {
+  letter-spacing: 2px;
+}
+
+footer {
+  background: var(--bn-black);
+  color: var(--bn-white);
+  padding: 35px 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 65px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+  .product-card img {
+    height: 210px;
+  }
+}
