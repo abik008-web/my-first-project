@@ -176,6 +176,7 @@ a {
     background: transparent;
     cursor: pointer;
     border-radius: 25px;
+    color: #202020;
 }
 
 .filter.active,
